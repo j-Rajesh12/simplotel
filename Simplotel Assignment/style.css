@@ -1,0 +1,238 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(10, 10, 10, 0.1);
+}
+
+.left-corner img {
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.right-corner {
+    display: flex;
+}
+
+.right-corner i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.right-corner i.fa-bars {
+    font-size: 20px;
+    color: black; /* Adjust color for visibility */
+    cursor: pointer;
+    display: none; /* Hide the hamburger icon by default */
+}
+
+#section1 {
+    position: relative;
+}
+
+#hero {
+    width: 100%;
+}
+
+#lorem {
+    height: 40px;
+    width: 380px;
+    position: absolute;
+    bottom: 230px;
+    left: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    background-image: linear-gradient(90deg, rgb(19, 19, 18), rgb(99, 98, 98));
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -10px;
+    background-color: rgb(199, 199, 199);
+}
+
+.info {
+    flex: 1 1 300px;
+    margin: 10px 60px 10px 50px;
+    text-align: center;
+}
+
+#section2 {
+    background-color: rgb(235, 232, 232);
+    padding: 20px;
+}
+
+#heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pics {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.pics img {
+    max-width: 100%;
+}
+
+.button {
+    height: 30px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pic1{
+    align-items: flex-start;
+}
+#middle{
+    text-align: center;
+}
+#pic3{
+    align-items: flex-end;
+    text-align: end;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .left-corner img {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .right-corner {
+        display: flex;
+        align-items: center;
+    }
+
+    .right-corner i.fa-bars {
+        margin-right: 10px;
+        font-size: 20px;
+        color: black; /* Adjust color for visibility */
+        cursor: pointer;
+    }
+
+    .left-corner img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #lorem {
+        position: absolute;
+        bottom: 55%;
+        left: 0;
+        color: white;
+        font-weight: bold;
+        font-size: 15px; /* Adjust font size */
+        padding: 10px;
+        background-image: linear-gradient(90deg, rgb(19, 19, 18), rgb(99, 98, 98));
+        z-index: 1; /* Ensure it's on top */
+        width: 200px; /* Adjust width */
+        height:20px;
+        text-align: center;
+    }
+
+    #hero {
+        height: 300px; 
+        position: relative;
+    }
+
+    .info,
+    .pics {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    #pic2 {
+        align-items: flex-start;
+    }
+
+    #middle {
+        text-align: start;
+    }
+
+    #pic3 {
+        align-items: flex-start;
+    }
+
+    #end {
+        text-align: start;
+    }
+
+   
+    .right-corner .fab.fa-whatsapp,
+    .right-corner .fab.fa-facebook {
+        display: none;
+    }
+
+    .right-corner i.fa-bars {
+        margin-right: 10px;
+        font-size: 20px;
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    .right-corner i.fa-bars {
+        display: none; 
+    }
+}
